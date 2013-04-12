@@ -1,7 +1,7 @@
-ÔªøSearch-String-Cleanup
+Search-String-Cleanup
 =====================
 
-Basic-Search-Cleanup is a vb class providing methods to cleans up a given string.   The class provides methods to - Returns only title when the search string contains a whole citation, Replaces &amp; with ‚Äú%26‚Äù, strip ?,  strip " but not if the string has an ending ", strip special chars such as ). or .  or ,  if they appear at the beginning of the string.
+Basic-Search-Cleanup is a vb class providing methods to cleans up a given string.   The class provides methods to - Returns only title when the search string contains a whole citation, Replaces &amp; with ì%26î, strip ?,  strip " but not if the string has an ending ", strip special chars such as ). or .  or ,  if they appear at the beginning of the string.
 
 ### Usage
 
@@ -9,12 +9,19 @@ Include the class:
 
 ```vb
 	Imports SearchStringCleanup
-
 ```
 
 Instantiate the class:
 
 ```vb
      Dim cleanup As New SearchStringCleanup
+```
 
+To strip off ? from the begining of the search string
+
+```vb
+Dim unstripped As string ' this is the raw search string
+Dim strippedStr As string
+
+strippedStr = cleanup.StripQuestionMark(unstripped )
 ```
