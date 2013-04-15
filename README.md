@@ -66,9 +66,9 @@ Some times the user may just enter an entire citation and try to search.  But th
 
 ```vb
 'For example passing 
-Harlow, H. F. (1983). Fundamentals for preparing psychology journal articles. Journal of Comparative and Physiological Psychology, 55, 893-896.
+'Harlow, H. F. (1983). Fundamentals for preparing psychology 'journal articles. Journal of Comparative and Physiological 'Psychology, 55, 893-896.
 
-will return 'Fundamentals for preparing psychology journal articles'
+'will return 'Fundamentals for preparing psychology journal 'articles'
 
 Dim unstripped As string ' this is the raw search string
 Dim strippedStr As string
